@@ -9,8 +9,8 @@ function App() {
 
   const [todos, setTodos] = useState([])
 
-  const addTodo = (title, description) => {
-    const newTodo = {title, description, completed: false};
+  const addTodo = (title) => {
+    const newTodo = {title, completed: false};
     setTodos([...todos, newTodo]);
   };
 
@@ -20,10 +20,23 @@ function App() {
     setTodos(newTodos);
   };
 
+  const removeTodo = (index) => {
+    const newTodos = [...todos];
+    newTodos.splice(index, 1);
+    setTodos(newTodos);
+  }
+  
+  const updateTodo = (index, newTitle) => {
+    const newTodos = [...todos];
+    newTodos[index].title = newTitle;
+    setTodos(newTodos);
+  }
+
   return (
     <div className="app-conatiner">
+      <h1>Todos</h1>
       <CreateTodo addTodo={addTodo} />
-      <Todos todos={todos} toggleTodo={toggleTodo} />
+      <Todos todos={todos} toggleTodo={toggleTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
     </div>
   )
 }

@@ -2,17 +2,15 @@ import { useState } from "react"
 
 export function CreateTodo({addTodo}) {
     const [title, setTitle] = useState("");
-    const [description, setDescription] = useState("");
 
     const handleAdd = () => {
-        if(title.trim() === "" || description.trim() === ""){
-            alert("Please fill in both fields!");
+        if(title.trim() === ""){
+            alert("Please fill in the fields!");
             return;
         }
 
-        addTodo(title, description);
+        addTodo(title);
         setTitle("");
-        setDescription("");
     }
 
     return (
@@ -20,17 +18,9 @@ export function CreateTodo({addTodo}) {
         <input 
         style={{padding: 10, margin: 10}} 
         type="text" 
-        placeholder="title"
+        placeholder="Add a task"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        ></input> <br />
-    
-        <input 
-        style={{padding: 10, margin: 10}} 
-        type="text" 
-        placeholder="description"
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
         ></input> <br />
 
         <button 
