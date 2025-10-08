@@ -12,9 +12,11 @@ function App() {
     return savedTodos ? JSON.parse(savedTodos) : [];
   });
 
+  const [filter, setFilter] = useState("all");
+
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
-  });
+  }, [todos]);
 
   const addTodo = (title) => {
     const newTodo = {title, completed: false};
@@ -39,11 +41,24 @@ function App() {
     setTodos(newTodos);
   }
 
+  const filteredTodos = todos.filter(todo => {
+    if(filter == "active") return !todo.completed;
+    if(filter == "completed") return todo.completed;
+    return true; 
+  })
+
   return (
     <div className="app-conatiner">
       <h1>Todos</h1>
       <CreateTodo addTodo={addTodo} />
-      <Todos todos={todos} toggleTodo={toggleTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
+      
+      <div style={{margin: "10px"}}>
+        <button onClick={() => setFilter("all")} disabled={filter === "all"}>All</button>
+        <button onClick={() => setFilter("active")} disabled={filter === "active"}>Active</button>
+        <button onClick={() => setFilter("completed")} disabled={filter === "completed"}>Completed</button>
+      </div>
+      
+      <Todos todos={filteredTodos} toggleTodo={toggleTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
     </div>
   )
 }
