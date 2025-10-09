@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
 import { CreateTodo } from './components/CreateTodo'
 import { Todos } from './components/Todos'
+import Button from "./components/Button";
+
 
 function App() {
 
@@ -48,14 +49,18 @@ function App() {
   })
 
   return (
-    <div className="app-conatiner">
-      <h1>Todos</h1>
-      <CreateTodo addTodo={addTodo} />
-      
-      <div style={{margin: "10px"}}>
-        <button onClick={() => setFilter("all")} disabled={filter === "all"}>All</button>
-        <button onClick={() => setFilter("active")} disabled={filter === "active"}>Active</button>
-        <button onClick={() => setFilter("completed")} disabled={filter === "completed"}>Completed</button>
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900
+     text-white flex flex-col items-center py-10">
+      <div class="w-full max-w-2xl bg-gray-800 rounded-2xl shadow-2xl p-6">
+        <h1 className='text-center font-bold text-5xl' >Todos</h1>
+      </div>
+      <div className='mt-20'>
+        <CreateTodo addTodo={addTodo} />
+      </div>
+      <div className="flex gap-6 mt-20">
+        <Button label={"All"} onClick={() => setFilter("all")} disabled={filter === "all"}>All</Button>
+        <Button label={"Active"} onClick={() => setFilter("active")} disabled={filter === "active"}>Active</Button>
+        <Button label={"Completed"} onClick={() => setFilter("completed")} disabled={filter === "completed"}>Completed</Button>
       </div>
       
       <Todos todos={filteredTodos} toggleTodo={toggleTodo} removeTodo={removeTodo} updateTodo={updateTodo} />

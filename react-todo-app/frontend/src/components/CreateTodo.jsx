@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Button from "./Button";
 
 export function CreateTodo({addTodo}) {
     const [title, setTitle] = useState("");
@@ -14,20 +15,17 @@ export function CreateTodo({addTodo}) {
     }
 
     return (
-    <div>
+    <div className="flex gap-6 w-full justify-center">
         <input 
-        style={{padding: 10, margin: 10}} 
+        className="bg-gray-700 py-2 px-4 rounded-xl outline-non"
         type="text" 
         placeholder="Add a task"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         ></input> <br />
 
-        <button 
-        style={{padding: 10, margin: 10}}
-        onClick={handleAdd}
-        >Add a todo
-        </button>
+        <Button onClick={handleAdd} label={"Add a todo"} btnColor="blue" >
+        </Button>
     </div>
     )
 }
