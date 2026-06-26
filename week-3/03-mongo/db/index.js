@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const { PassThrough } = require('supertest/lib/test');
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://dhanajayanyasotha_db_user:JyVvrkblyQrXZ4io@cluster0.typnoz2.mongodb.net/');
+mongoose.connect('your-mongodb-url');
 
 // Define schemas
 const AdminSchema = new mongoose.Schema({
