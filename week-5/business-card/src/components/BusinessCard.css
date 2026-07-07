@@ -1,0 +1,28 @@
+
+.card {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-link {
+    text-decoration: none;
+    background-color: royalblue;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-link:hover {
+    background-color: #1e40af;
+}
