@@ -1,3 +1,5 @@
+// solution for the business card assignment 
+
 export function BusinessCard(props) {
     return (
       <div style={styles.card}>
