@@ -31,7 +31,7 @@ export function BusinessCard(props) {
     );
   }
   
-  // Styles
+  // Styles and combination 
   const styles = {
     card: {
       border: '1px solid #ddd',
