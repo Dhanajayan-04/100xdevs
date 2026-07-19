@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 
+// Read the given assignment question and understand the concepts to answer 
 // In this assignment, your task is to create a component that performs an expensive calculation (finding the factorial) based on a user input. 
 // Use useMemo to ensure that the calculation is only recomputed when the input changes, not on every render.
 
