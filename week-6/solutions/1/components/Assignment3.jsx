@@ -1,4 +1,6 @@
 import React, { useState, useMemo } from 'react';
+
+// Read the given assignment question and understand the concepts to answer 
 // You have been given a list of items you shopped from the grocery store
 // You need to calculate the total amount of money you spent
 
