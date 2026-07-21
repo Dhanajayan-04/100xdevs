@@ -1,4 +1,4 @@
-// solution for the business card assignment 
+// solution for the business card assignment make it in react 
 
 export function BusinessCard(props) {
     return (
@@ -31,7 +31,8 @@ export function BusinessCard(props) {
     );
   }
   
-  // Styles and combination 
+  // Styles and combination
+
   const styles = {
     card: {
       border: '1px solid #ddd',
