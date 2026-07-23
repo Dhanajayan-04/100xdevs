@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f2f2f2;
+}
+
+.card {
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 4px 10px gray;
+}
+
+.coverPic {
+    height: 140px;
+    background: #74d9e8;
+    position: relative;
+}
+
+.coverPic img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    left: 50%;
+    bottom: -55px;
+    transform: translateX(-50%);
+}
+
+.user-info {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.user-info span {
+    color: gray;
+}
+
+.stats {
+    display: flex;
+}
+
+.stat {
+    flex: 1;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.stat p {
+    color: gray;
+}
