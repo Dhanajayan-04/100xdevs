@@ -63,6 +63,13 @@ const VIDEOS = [{
     author: "Sun TV ✔",
     views: "17M views",
     timestamp: "2 months ago"
+},{
+    title: "DC : Official Trailer Tamil | Lokesh Kanagaraj",
+    image: "photo.jpg",
+    thumbImage: "thumb.jpg",
+    author: "Sun TV ✔",
+    views: "17M views",
+    timestamp: "2 months ago"
 }]
 
 export function VideoGrid() {
