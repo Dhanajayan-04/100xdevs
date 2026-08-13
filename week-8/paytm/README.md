@@ -19,7 +19,7 @@ It helped me understand JWT authentication, authentication middleware, Express r
 * Transfer money between users
 * Search for users
 * Update user information
-* MongoDB database integration
+* MongoDB database integration  
 * Request validation using Zod
 
 ## Tech Stack
