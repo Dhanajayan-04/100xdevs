@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
-import { Button} from "./Button";
+import { useEffect, useState } from "react"
+import { Button } from "./Button"
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+
 
 export const Users = () => {
     // Replace with backend call
@@ -10,9 +11,9 @@ export const Users = () => {
 
     useEffect(() => {
         axios.get("http://localhost:3000/api/v1/user/bulk?filter=" + filter)
-        .then(response => {
-            setUsers(response.data.user)
-        })
+            .then(response => {
+                setUsers(response.data.user)
+            })
     }, [filter])
 
     return <>
@@ -25,9 +26,7 @@ export const Users = () => {
             }} type="text" placeholder="Search users..." className="w-full px-2 py-1 border rounded border-slate-200"></input>
         </div>
         <div>
-            {users.map(user => (
-                <User key={user._id} user={user} />
-            ))}
+            {users.map(user => <User user={user} />)}
         </div>
     </>
 }
@@ -42,7 +41,7 @@ function User({user}) {
                     {user.firstName[0]}
                 </div>
             </div>
-            <div className="flex flex-col justify-center h-full">
+            <div className="flex flex-col justify-center h-ful">
                 <div>
                     {user.firstName} {user.lastName}
                 </div>
