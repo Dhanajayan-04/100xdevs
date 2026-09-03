@@ -1,3 +1,5 @@
+// adding schemas
+
 const mongoose = require("mongoose");
 const { boolean } = require("zod");
 
