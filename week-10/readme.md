@@ -75,4 +75,4 @@ week-10/
 
 ## Learning Goal
 
-The goal of Week 10 is to understand how applications are interact with relational databases and how an ORM such as Prisma can make database operations easier and more structured.
+The goal of Week 10 is to understand how applications are interact with relational databases and how an ORM such as Prisma can make database operations are easier and more structured.
