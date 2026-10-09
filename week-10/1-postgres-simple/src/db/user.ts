@@ -7,6 +7,7 @@ import { client } from "..";
  *   username: string,
  *   password: string,
  *   name: string
+ *   add your own ideas
  * }
  */
 export async function createUser(username: string, password: string, name: string) {
@@ -19,6 +20,7 @@ export async function createUser(username: string, password: string, name: strin
  *   username: string,
  *   password: string,
  *   name: string
+ *   add your own ideas
  * }
  */
 export async function getUser(userId: number) {
