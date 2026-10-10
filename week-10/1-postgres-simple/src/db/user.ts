@@ -24,5 +24,5 @@ export async function createUser(username: string, password: string, name: strin
  * }
  */
 export async function getUser(userId: number) {
-    
+    /* should return the async */
 }
