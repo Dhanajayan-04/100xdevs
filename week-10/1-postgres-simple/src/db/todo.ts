@@ -7,7 +7,6 @@ import { client } from "..";
  *  description: string,
  *  done: boolean,
  *  id: number
- *  add your own ideas
  * }
  */
 export async function createTodo(userId: number, title: string, description: string) {
@@ -21,7 +20,6 @@ export async function createTodo(userId: number, title: string, description: str
  *  description: string,
  *  done: boolean,
  *  id: number
- *  add your own ideas
  * }
  */
 export async function updateTodo(todoId: number) {
