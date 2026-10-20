@@ -66,7 +66,7 @@ The server will run on `http://localhost:3000`.
 
 Through this project, I learned how to build backend APIs using Express.js, work with MongoDB and Mongoose, implement JWT authentication, create authentication middleware, validate requests using Zod, and use MongoDB transactions for money transfers.
 
-This project helped me strengthen my understanding of backend development and REST APIs.
+This project helped me strengthen my understanding of the backend development and REST APIs.
 
 ## Author
 
