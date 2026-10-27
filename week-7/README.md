@@ -1,6 +1,6 @@
 # Week 7 - React Problems (100xDevs)
 
-This folder contains the React assignments and practice problems for Week 7 of the 100xDevs course.
+This folder contains the React assignments and practice problems for the Week 7 of the 100xDevs course.
 
 ## Assignments
 
