@@ -1,4 +1,3 @@
-
 import { AppBar } from "@/components/Appbar";
 import {VideoCard} from "@/components/VideoCard";
 import { VideoGrid } from "@/components/VideoGrid";
