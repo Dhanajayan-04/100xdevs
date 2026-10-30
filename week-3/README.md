@@ -1,6 +1,6 @@
 Week 3 – Middlewares, JWT Authentication & MongoDB
 
-This week focused on learning Express.js middlewares, JWT authentication, MongoDB, and combining authentication with database operations.
+This week focused on learning the Express.js middlewares, JWT authentication, MongoDB, and combining authentication with database operations.
 
 ---
 
@@ -159,4 +159,4 @@ By the end of Week 3, I gained a better understanding of:
 
 Week 3 completed successfully.
 
-This week helped me build a stronger foundation in backend development by learning middleware, authentication, and database integration with Node.js.
+This week helped me to build a stronger foundation in backend development by learning middleware, authentication, and database integration with Node.js.
