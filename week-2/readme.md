@@ -137,4 +137,4 @@ By the end of Week 2, I gained a better understanding of:
 
 **Week 2 completed successfully.**
 
-This week helped me build the foundation required for backend development with **Node.js**.
+This week helped me to build the foundation required for backend development with **Node.js**.
