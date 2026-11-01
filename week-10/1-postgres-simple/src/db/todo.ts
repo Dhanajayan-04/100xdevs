@@ -6,7 +6,7 @@ import { client } from "..";
  *  title: string,
  *  description: string,
  *  done: boolean,
- *  id: number
+ *  id: numbers
  * }
  */
 export async function createTodo(userId: number, title: string, description: string) {
@@ -19,7 +19,7 @@ export async function createTodo(userId: number, title: string, description: str
  *  title: string,
  *  description: string,
  *  done: boolean,
- *  id: number
+ *  id: numbers
  * }
  */
 export async function updateTodo(todoId: number) {
@@ -33,7 +33,7 @@ export async function updateTodo(todoId: number) {
  *  title: string,
  *  description: string,
  *  done: boolean,
- *  id: number
+ *  id: numbers
  * }]
  */
 export async function getTodos(userId: number) {
