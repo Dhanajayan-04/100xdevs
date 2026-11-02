@@ -17,7 +17,7 @@ export async function createTodo(userId: number, title: string, description: str
 }
 /*
  * mark done as true for this specific todo.
- * Should return a todo object
+ * Should return a todo object then,
  * {
  *  title: string,
  *  description: string,
