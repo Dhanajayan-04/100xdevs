@@ -5,7 +5,7 @@ const prisma = new PrismaClient();
 
 /*
  * Should insert into the users table
- * Should return the User object
+ * Should return the User object then,
  * {
  *   username: string,
  *   password: string,
