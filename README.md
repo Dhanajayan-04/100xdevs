@@ -56,7 +56,7 @@ The course covers **frontend development, backend development, databases, authen
 
 To build a strong foundation in **full-stack web development** through consistent practice, assignments, and real-world projects.
 
-> This repository is continuously updated as I progress through the course.
+> This repository is continuously updated as I progress through the course here.
 
 ## 👨‍💻 Author
 
