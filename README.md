@@ -1,6 +1,6 @@
-# 100xDevs – Full Stack Development Journey
+y# 100xDevs – Full Stack Development Journey
 
-This repository contains my **learning progress, practice work, assignments, and projects** from the 100xDevs Full Stack Development course.
+This repository contains my **learning progress, practice work, assignments, and projects** from the 100xDevs on Full Stack Development course.
 
 The course covers **frontend development, backend development, databases, authentication, and modern web technologies**.
 
